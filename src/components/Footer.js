@@ -48,7 +48,7 @@ export default function SmallWithLogoLeft() {
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}
       >
-        <Logo />
+        <Logo w="140px" />
         <Text textAlign={"center"}>© Chevroalet SH. <Text color={'gray.500'}>by Agusvelaz - Alphadevs</Text></Text>
         
         <Stack direction={'row'} spacing={6}>

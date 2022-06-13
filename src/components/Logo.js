@@ -3,13 +3,13 @@ import { Image, Box, Link } from '@chakra-ui/react';
 
 import logo from './logo.png';
 
-export const Logo = props => {
+export const Logo = ({w}) => {
   // return <Box {...props}>Chevroalet</Box>;
   return (
     <Box
       position={'relative'}
       // height={'300px'}
-      width={'140px'}
+      width={w}
       overflow={'hidden'}
     >
       <Link href={`#Header`}>

@@ -55,7 +55,7 @@ export default function NavBar() {
           maxW={'6xl'}
           m="auto"
         >
-          <Logo />
+          <Logo w={"140px"} />
           <HStack spacing={8} alignItems={'center'}>
             <HStack
               as={'nav'}
