@@ -38,6 +38,7 @@ const NavLink = ({ page }) => (
       color:"brand.100"
     }}
     href={`#${page.href}`}
+    fontWeight={"normal"}
   >
     {page.name}
   </Link>
