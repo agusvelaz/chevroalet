@@ -7,6 +7,7 @@ import {
   Stack,
   Flex,
   Link,
+  Heading,
 } from '@chakra-ui/react';
 import { FcAssistant, FcDonate, FcInTransit } from 'react-icons/fc';
 
@@ -20,7 +21,8 @@ const Feature = ({ title, text, icon, children }) => {
       //   bg={"dark.200"}
       borderColor={'dark.200'}
     //   border={"1px solid"}
-      p={5}
+      px={5}
+      py={8}
       borderRadius={'xl'}
       boxShadow={"rgb(0 0 0 / 90%) 0px 1px 5px 0px"}
     >
@@ -37,9 +39,9 @@ const Feature = ({ title, text, icon, children }) => {
       >
         {icon}
       </Flex>
-      <Text fontWeight={600} fontSize="3xl">
+      <Heading fontWeight={600} fontSize="3xl" my={3}>
         {title}
-      </Text>
+      </Heading>
       <Text color={'gray.500'} fontSize="xl">
         {children}
       </Text>
@@ -63,15 +65,14 @@ export default function MoreInfo() {
           icon={<Icon as={FcDonate}  />}
           title={'Medios de pago'}
         >
-          Aceptamos tarjeta , mercadopago o trasferencia bancaria. Pagando en
+          Aceptamos tarjeta, mercadopago o trasferencia bancaria. Pagando en
           efectivo te hacemos un 10% de descuento.
         </Feature>
         <Feature
           icon={<Icon as={FcInTransit}  />}
           title={'Envios'}
         >
-          Hacemos envios a todo el pais. Tambien enviamos en el dia a CABA o
-          GBA. <Link to="/contacto">Contactanos</Link> para coordinar.
+          Hacemos envíos a todo el país. También enviamos en el día a CABA o GBA. <Link to="/contacto">Contáctanos</Link> para coordinar.
         </Feature>
       </SimpleGrid>
     </Box>

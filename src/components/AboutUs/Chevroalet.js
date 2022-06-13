@@ -1,9 +1,4 @@
-import {
-  Container,
-  Stack,
-  Flex,
-  Text,
-} from '@chakra-ui/react';
+import { Container, Stack, Flex, Text, Heading } from '@chakra-ui/react';
 
 export default function Chevroalet() {
   return (
@@ -16,23 +11,21 @@ export default function Chevroalet() {
       >
         <Flex direction={'column'} alignItems="center" textAlign="center">
           <Flex
-            as={'h2'}
-            direction={"column"}
+            direction={'column'}
             lineHeight={1.1}
             fontWeight={600}
-            fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}
+            fontFamily={'heading'}
+            textTransform={'uppercase'}
           >
-            <Text
-              as={'span'}
-            >
-              ¿ Quienes somos ?
-            </Text>
-            <Text as={'span'} color={'brand.100'} my={5}>
-              Chevroalet
-            </Text>
+            <Heading textAlign={{ base: 'center' }}>
+              <Text  fontSize={{ base: "4xl", sm: "5xl" }}>¿ Quienes somos ?</Text>
+              <Text color={'brand.100'} my={5} fontSize={{ base: "3xl", sm: "4xl" }}>
+                Chevroalet
+              </Text>
+            </Heading>
           </Flex>
-          <Text color={'gray.500'} fontSize="2xl">
-            Una empresa con más de 15 años de experiencia y trayectoria.
+          <Text color={'gray.500'}  fontSize={{ base: 'xl',  md: '2xl' }}>
+            Una empresa con más de 15 años de experiencia y trayectoria en la comercialización de repuestos y accesorios.
             Contamos con repuestos y accesorios originales o alternativas de
             primera calidad, brindándote seguridad y confianza. Tenemos el mejor
             servicio y asesoramiento para vos y tu auto.

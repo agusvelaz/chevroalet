@@ -8,7 +8,7 @@ import {
   useColorModeValue,
   VisuallyHidden,
 } from '@chakra-ui/react';
-import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { FaInstagram, FaShoppingCart } from 'react-icons/fa';
 import { Logo } from './Logo';
 
 const SocialButton = ({ children, label, href }) => {
@@ -21,12 +21,13 @@ const SocialButton = ({ children, label, href }) => {
       cursor={'pointer'}
       as={'a'}
       href={href}
+      target="_blank"
       display={'inline-flex'}
       alignItems={'center'}
       justifyContent={'center'}
       transition={'background 0.3s ease'}
       _hover={{
-        bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
+        bg: "dark.200",
       }}
     >
       <VisuallyHidden>{label}</VisuallyHidden>
@@ -43,20 +44,24 @@ export default function SmallWithLogoLeft() {
         maxW={'6xl'}
         py={4}
         direction={{ base: 'column', md: 'row' }}
-        spacing={4}
+        spacing={0}
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}
       >
-        <Logo />
-        <Text>© 2022 Chakra Templates. All rights reserved</Text>
+        <Logo w="140px" />
+        <Text textAlign={"center"}>© Chevroalet SH. <Text color={'gray.500'}>by Agusvelaz - Alphadevs</Text></Text>
+        
         <Stack direction={'row'} spacing={6}>
-          <SocialButton label={'Twitter'} href={'#'}>
-            <FaTwitter />
+          <SocialButton
+            label={'ShopML'}
+            href="https://listado.mercadolibre.com.ar/_CustId_123669454"
+          >
+            <FaShoppingCart />
           </SocialButton>
-          <SocialButton label={'YouTube'} href={'#'}>
-            <FaYoutube />
-          </SocialButton>
-          <SocialButton label={'Instagram'} href={'#'}>
+          <SocialButton
+            label={'Instagram'}
+            href="https://www.instagram.com/chevroalet/"
+          >
             <FaInstagram />
           </SocialButton>
         </Stack>

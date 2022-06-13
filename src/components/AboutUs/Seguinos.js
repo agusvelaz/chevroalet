@@ -10,6 +10,7 @@ import {
   Link,
 } from '@chakra-ui/react';
 import Blob from './Blob';
+import insta from "./instagram.jpg"
 
 export default function Seguinos() {
   return (
@@ -50,9 +51,7 @@ export default function Seguinos() {
               align={'center'}
               w={'100%'}
               h={'100%'}
-              src={
-                'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80'
-              }
+              src={insta}
             />
           </Box>
         </Flex>
@@ -60,32 +59,13 @@ export default function Seguinos() {
           <Heading
             lineHeight={1.1}
             fontWeight={600}
-            fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}
+            fontSize={{ base: "4xl", sm: "5xl" }}
           >
-            <Text
-              as={'span'}
-              position={'relative'}
-              //   _after={{
-              //     content: "''",
-              //     width: 'full',
-              //     height: '30%',
-              //     position: 'absolute',
-              //     bottom: 1,
-              //     left: 0,
-              //     bg: 'brand.100',
-              //     zIndex: -1,
-              //   }}
-            >
               Seguinos
-            </Text>
-            <br />
-            {/* <Text as={'span'} color={'brand.100'}>
-              Seguinos
-            </Text> */}
           </Heading>
-          <Text color={'gray.500'} fontSize="xl">
-            Si queres ver mas contenido sobre nostros y acceder a promociones
-            exclusivas podes seguirnos en nuestras redes.
+          <Text color={'gray.500'} fontSize={{ base: 'xl',  md: '2xl' }}>
+            Si queres ver más contenido sobre nosotros y acceder a promociones
+            exclusivas podés seguirnos en nuestras redes.
           </Text>
           <Stack
             spacing={{ base: 4, sm: 6 }}
@@ -95,7 +75,7 @@ export default function Seguinos() {
               href="https://www.instagram.com/chevroalet/"
               target={'_blank'}
             >
-              <Button size={'lg'} fontWeight={'normal'} px={6} bg={'brand.100'}>
+              <Button size={'lg'} px={6}  variant={"brand"}>
                 Instagram
               </Button>
             </Link>

@@ -9,28 +9,34 @@ import {
   Link,
 } from '@chakra-ui/react';
 import MoreInfo from '../components/Header/MoreInfo';
+import chevy from '../components/Header/chevy1.jpg';
+import { Logo } from '../components/Logo';
 export default function Header() {
   return (
     <>
       <Flex
         maxW={'100%'}
-        borderBottom={'1px solid red'}
-        // height={'80vh'}
+        height={{base:"100vh", sm:'85vh'}}
         alignItems={'center'}
         justifyContent="center"
+        bgImage={`linear-gradient(to bottom, rgb(0, 0, 0, 0), rgb(19, 19, 19)100%), url(${chevy})`}
+        px={'20px'}
+        as="section" id="Header"
       >
-        <Box
-          textAlign={'center'}
-          py={36 }
-          color="brand.100"
-        >
-          <Text as={'span'} fontSize={{ sm:"3xl",md: '4xl' }}>
+        <Box textAlign={'center'} py={36} color="brand.100" mt={"78px"}>
+          <Text fontSize={{ base: '2xl', sm: '3xl', md:"4xl" }} fontFamily={'heading'} textShadow={" 0px 1px 0px #000000"}>
             Repuestos & Accesorios
           </Text>
-          <Heading fontSize={{ sm: '6xl', md: '8xl' }}>
-            CHEVROALET
-          </Heading>
-          <Text color={'gray.500'} fontSize={{ base: '2xl', sm: 'xl', md: '3xl' }} maxW={'800px'} my={8}>
+        
+          <Heading fontSize={{ base: '5xl', sm: '6xl', md:'8xl'}} textShadow={" 0px 1px 0px #000000"}>CHEVROALET</Heading>
+          <Text
+            color={'#fff'}
+            fontSize={{ base: 'lg', sm: 'xl', md: '3xl' }}
+            maxW={'800px'}
+            
+            // fontWeight={"bold"}
+            textShadow={" 0px 1px 4px #000000"}
+          >
             Con más de 15 años de experiencia y trayectoria en la
             comercialización de repuestos y accesorios.
           </Text>
@@ -45,10 +51,9 @@ export default function Header() {
             <Link
               href="https://listado.mercadolibre.com.ar/_CustId_123669454"
               target={'_blank'}
+              _hover={{ textDecoration: 'none' }}
             >
-              <Button bg={'brand.100'} px={6}>
-                Productos publicados
-              </Button>
+              <Button px={6} mt={5} variant={"brand"}>Productos publicados</Button>
             </Link>
           </Stack>
         </Box>
