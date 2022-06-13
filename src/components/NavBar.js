@@ -34,7 +34,8 @@ const NavLink = ({ page }) => (
     rounded={'md'}
     _hover={{
       textDecoration: 'none',
-      bg: useColorModeValue('gray.200', 'gray.700'),
+      bg: 'dark.200',
+      color:"brand.100"
     }}
     href={`#${page.href}`}
   >
@@ -75,6 +76,11 @@ export default function NavBar() {
             onClick={isOpen ? onClose : onOpen}
             color={'#fff'}
             bg={'dark.200'}
+            _hover={{
+              textDecoration: 'none',
+              // bg: "dark.100",
+              color:"brand.100"
+            }}
           />
         </Flex>
 

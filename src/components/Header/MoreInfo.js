@@ -65,15 +65,14 @@ export default function MoreInfo() {
           icon={<Icon as={FcDonate}  />}
           title={'Medios de pago'}
         >
-          Aceptamos tarjeta , mercadopago o trasferencia bancaria. Pagando en
+          Aceptamos tarjeta, mercadopago o trasferencia bancaria. Pagando en
           efectivo te hacemos un 10% de descuento.
         </Feature>
         <Feature
           icon={<Icon as={FcInTransit}  />}
           title={'Envios'}
         >
-          Hacemos envios a todo el pais. Tambien enviamos en el dia a CABA o
-          GBA. <Link to="/contacto">Contactanos</Link> para coordinar.
+          Hacemos envíos a todo el país. También enviamos en el día a CABA o GBA. <Link to="/contacto">Contáctanos</Link> para coordinar.
         </Feature>
       </SimpleGrid>
     </Box>

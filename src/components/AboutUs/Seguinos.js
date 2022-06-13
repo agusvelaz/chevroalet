@@ -64,8 +64,8 @@ export default function Seguinos() {
               Seguinos
           </Heading>
           <Text color={'gray.500'} fontSize={{ base: 'xl',  md: '2xl' }}>
-            Si queres ver mas contenido sobre nostros y acceder a promociones
-            exclusivas podes seguirnos en nuestras redes.
+            Si queres ver más contenido sobre nosotros y acceder a promociones
+            exclusivas podés seguirnos en nuestras redes.
           </Text>
           <Stack
             spacing={{ base: 4, sm: 6 }}

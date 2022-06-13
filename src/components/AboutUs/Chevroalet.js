@@ -25,7 +25,7 @@ export default function Chevroalet() {
             </Heading>
           </Flex>
           <Text color={'gray.500'}  fontSize={{ base: 'xl',  md: '2xl' }}>
-            Una empresa con mas de 15 años de experiencia y trayectoria en la comercialización de repuestos y accesorios.
+            Una empresa con más de 15 años de experiencia y trayectoria en la comercialización de repuestos y accesorios.
             Contamos con repuestos y accesorios originales o alternativas de
             primera calidad, brindándote seguridad y confianza. Tenemos el mejor
             servicio y asesoramiento para vos y tu auto.

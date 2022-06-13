@@ -27,14 +27,14 @@ export default function Mercadolibre() {
             fontWeight={600}
             fontSize={{ base: "4xl", sm: "5xl" }}
           >
-              Mercadolibre
+              MercadoLibre
           </Heading>
           <Text color={'gray.500'} fontSize={{ base: 'xl',  md: '2xl' }}>
             Somos MercadoLíder Platinum, esto nos cataloga como uno de los
-            mejores vendedores del sitio, con mas de 10 años de experiencia en
-            ventas online , brindamos una excelente experiencia. Todos los dias
-            despachamos pedidos a todo el pais.
-          </Text>
+            mejores vendedores del sitio, con más de 10 años de experiencia en
+            ventas online , brindamos una excelente experiencia. Todos los días
+            despachamos pedidos a todo el país.
+            </Text>
           <Stack
             spacing={{ base: 4, sm: 6 }}
             direction={{ base: 'column', sm: 'row' }}
