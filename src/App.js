@@ -9,6 +9,8 @@ import Header from './page/Header';
 import AboutUs from './page/AboutUs';
 import Contact from './page/Contact';
 import Footer from './components/Footer'
+import FindUs from './page/FindUs';
+import WhatsAppButton from './components/WhatsAppButton';
 
 function App() {
   return (
@@ -18,8 +20,10 @@ function App() {
       <Box px={8} >
         <AboutUs />
         <Contact/>
+        <FindUs/>
       </Box>
       <Footer/>
+      <WhatsAppButton/>
     </ChakraProvider>
   );
 }

@@ -6,6 +6,7 @@ import {
   Stack,
   Flex,
   Link,
+  Heading
 } from '@chakra-ui/react';
 import { FcAssistant, FcDonate, FcInTransit } from 'react-icons/fc';
 
@@ -17,7 +18,8 @@ const Feature = ({ title, text, icon, children }) => {
       justify={'center'}
       textAlign="center"
       borderColor={'dark.200'}
-      p={10}
+      px={10}
+      py={10}
       borderRadius={'xl'}
       boxShadow={'rgb(0 0 0 / 90%) 0px 1px 5px 0px'}
     >
@@ -28,16 +30,15 @@ const Feature = ({ title, text, icon, children }) => {
         justify={'center'}
         color={'white'}
         rounded={'full'}
-        // bg={'gray.500'}
         mb={1}
         sx={{ svg: { w: 20, h: 20 } }}
       >
         {icon}
       </Flex>
-      <Text fontWeight={600} fontSize="3xl">
+      <Heading fontWeight={600} fontSize="3xl" my={3}>
         {title}
-      </Text>
-      <Text color={'brand.100'} fontSize="3xl">
+      </Heading>
+      <Text color={'brand.100'} fontSize={{base:"2xl", sm:"3xl"}}>
         {children}
       </Text>
     </Flex>
@@ -46,7 +47,7 @@ const Feature = ({ title, text, icon, children }) => {
 
 export default function ContactInfo() {
   return (
-    <Box py={100} px={10} maxW={'8xl'} m="auto">
+    <Box py={100} px={0} maxW={'8xl'} m="auto">
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
         <Feature icon={<Icon as={FcAssistant} />} title={'Llamanos'}>
           4542-9075

@@ -5,7 +5,7 @@ import  Seguinos  from "../components/AboutUs/Seguinos"
 
 export default function AboutUs() {
   return (
-    <Box as={"section"} >
+    <Box as="section" id="AboutUs"  >
     <Chevroalet/>
     <Mercadolibre/>
     <Seguinos/>

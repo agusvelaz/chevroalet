@@ -1,23 +1,16 @@
-import { Container, Stack, Flex, Text } from '@chakra-ui/react';
+import { Container, Stack, Flex, Text, Heading } from '@chakra-ui/react';
 import ContactInfo from '../components/Contact/ContactInfo';
 
 export default function Contact() {
   return (
     <>
-      <Flex direction={'column'} alignItems="center" textAlign="center" my={10}>
+      <Flex direction={'column'} alignItems="center" textAlign="center" my={10} as="section" id="Contact">
         <Flex
-          as={'h2'}
-          direction={'column'}
-          lineHeight={1.1}
-          fontWeight={600}
           fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}
         >
-          <Text as={'span'}>Contacto</Text>
-          {/* <Text as={'span'} color={'brand.100'} my={5}>
-            Chevroalet
-          </Text> */}
+          <Heading  fontSize={{ base: "4xl", sm: "5xl" }}>CONTACTO</Heading>
         </Flex>
-        <ContactInfo/>
+        <ContactInfo />
       </Flex>
     </>
   );

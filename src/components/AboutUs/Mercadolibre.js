@@ -10,6 +10,7 @@ import {
   Link
 } from '@chakra-ui/react';
 import Blob from './Blob';
+import mercado from './mercado.png'
 
 export default function Mercadolibre() {
   return (
@@ -18,36 +19,17 @@ export default function Mercadolibre() {
         align={'center'}
         spacing={{ base: 8, md: 10 }}
         py={{ base: 20, md: 28 }}
-        direction={{ base: 'column', md: 'row' }}
+        direction={{ base: 'column-reverse', md: 'row' }}
       >
         <Stack flex={1} spacing={{ base: 5, md: 10 }}>
           <Heading
             lineHeight={1.1}
             fontWeight={600}
-            fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}
+            fontSize={{ base: "4xl", sm: "5xl" }}
           >
-            <Text
-              as={'span'}
-              position={'relative'}
-              //   _after={{
-              //     content: "''",
-              //     width: 'full',
-              //     height: '30%',
-              //     position: 'absolute',
-              //     bottom: 1,
-              //     left: 0,
-              //     bg: 'brand.100',
-              //     zIndex: -1,
-              //   }}
-            >
               Mercadolibre
-            </Text>
-            <br />
-            {/* <Text as={'span'} color={'brand.100'}>
-              Mercadolibre
-            </Text> */}
           </Heading>
-          <Text color={'gray.500'} fontSize="xl">
+          <Text color={'gray.500'} fontSize={{ base: 'xl',  md: '2xl' }}>
             Somos MercadoLíder Platinum, esto nos cataloga como uno de los
             mejores vendedores del sitio, con mas de 10 años de experiencia en
             ventas online , brindamos una excelente experiencia. Todos los dias
@@ -60,9 +42,10 @@ export default function Mercadolibre() {
               <Link href="https://listado.mercadolibre.com.ar/_CustId_123669454" target={"_blank"}>
             <Button
               size={'lg'}
-              fontWeight={'normal'}
               px={6}
-              bg={'brand.100'}
+              // bg={"brand.100"}
+              variant={"brand"}
+              
             >
               Productos publicados
             </Button>
@@ -99,9 +82,7 @@ export default function Mercadolibre() {
               align={'center'}
               w={'100%'}
               h={'100%'}
-              src={
-                'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80'
-              }
+              src={mercado}
             />
           </Box>
         </Flex>

@@ -1,28 +1,43 @@
-import { extendTheme } from "@chakra-ui/react"
+import { extendTheme } from '@chakra-ui/react';
+import fonts from './font';
+import colors from './colors';
 
 // 2. Call `extendTheme` and pass your custom values
 const theme = extendTheme({
-    styles:{
-        global:{
-            body:{
-                bg: "#121212",
-                color:"#fff",
-                fontFamily: 'body'
-            }
-        }
+  styles: {
+    global: {
+      body: {
+        bg: '#121212',
+        color: '#fff',
+        fontFamily: fonts.body,
+      },
     },
-  colors: {
-    brand: {
-      100: "#ffa600",
-      // ...
-      900: "#1a202c",
-    },
-    dark:{
-        100:"#121212",
-        200: "#282828"
-      }
   },
-})
+  components: {
+    Button: {
+      baseStyle: {
+        textTransform: 'uppercase',
+        fontWeight: 'bold',
+        color: '#fff',
+        bg:'#ffa600',
+        _hover: {
+          bg: '#8b5a00',
+          // color:"#000",
+        },
+      },
 
+    },
+    Link: {
+      baseStyle: {
+        _hover: {
+          textDecoration: 'none',
+        },
+      },
+    },
+  },
+
+  colors,
+  fonts,
+});
 
 export default theme;
